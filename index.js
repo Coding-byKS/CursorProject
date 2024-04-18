@@ -62,9 +62,10 @@ function handler(e){
                 score[1].innerHTML=scoreCounter;},1000)
                 randomGen();
                 document.getElementById("h1").innerHTML="Great Job!! Those crickets could be irritating"
+                document.getElementById("p").innerHTML="";
                 button.innerHTML = "Play Again?????"
                 start.classList.remove("hide");
-              }, 1000);
+              }, 2500);
 
              }
   }
