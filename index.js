@@ -10,7 +10,7 @@ let scoreCounter = 0;
 
 score[1].innerHTML=scoreCounter;
 let width = window.outerWidth;
-width = 1705; //need to figure out max value of clientX
+// width = 1705; //need to figure out max value of clientX
 let height = window.innerHeight;
 let x, y;
 
