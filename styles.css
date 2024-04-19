@@ -2,6 +2,9 @@
 :root{
     --left:900px;
     --top:343px;
+    --leftBox:100px;
+    --topBox:100px;
+
 }
 body{
     display: block;
@@ -13,7 +16,7 @@ body{
     border: 5px solid darkolivegreen;
     overflow: hidden;
 }
-.main{    
+.main{  
     background-image: url(./images/forest.jpg);  
     display: flex;
     flex-direction: column;    
@@ -21,14 +24,10 @@ body{
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment: fixed;   */
-    justify-content: center;
-    align-items:center;
-    
+    align-items: flex-start;     
 }
 .score{
-    width: 100%;    
-    margin-right: 10%;
+    width: 95%;    
     margin-bottom: 10%;   
     display: flex;
     flex-direction: column;
@@ -36,27 +35,23 @@ body{
 }
 .scoreContent{
     font-size: 30px;
+    font-family: Helvetica;
     text-align: end;
 }
-
-.start{
-    width: 30%;
-    height: 100%;
-    background-color:rgb(227, 227, 227);
-    color: darkslategrey;
-    font-size:large;
-    padding: 2%;
-    font-family: Helvetica;
-    box-shadow: 2px 2px 2px 2px grey;
+.start{    
     margin-bottom: 10%;
+    height: 100%;
+    
 }
-.hide{
-    opacity: 0%;
+h1{
+    font-family: Helvetica;
+}
+p{
+    font-family: Helvetica;
 }
 button{
     font-size: 15px;
     font-family: Helvetica;
-
 }
 img{
     position: absolute;
@@ -67,4 +62,12 @@ img.imagedetails{
     position:absolute;
     left:var(--left);
     top: var(--top);       
+}
+#box{
+    position:absolute;
+    left:var(--leftBox);
+    top: var(--topBox); 
+    width: 220px;
+    height: 120px;       
+    /* border: 4px solid black; */    
 }

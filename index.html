@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursor Project</title>
+    <title>Find the cricket</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -12,21 +12,22 @@
             <div class="scoreContent">SCORE</div>
             <div class="scoreContent">0</div>
         </div>
-        <div class="start">
-            <h1 id="h1">Find the chirping Cricket!!</h1>
-            <p id="p"> 
-                Drag your mouse around to find the cricket. It is hiding behind the chirping.
-            </p>
-            <p>Make sure you turn your audio on before playing.</p>
-            <button id="unmuteButton">Start Game</button>
-        </div>    
-    
-        <audio class="audio" muted autoplay loop src="./audio/cricket.wav"></audio>
-        <!-- <button id="unmuteButton">UNMUTE</button> -->
-        
+        <div class="start">   
+            <dialog open>
+                <h1 id="h1">Find the chirping Cricket!!</h1>
+                <p id="p"> 
+                    Drag your mouse around to find the cricket. It is hiding behind the chirping.
+                </p>
+                <p>Make sure you turn your audio on before playing.</p>
+                <form method="dialog">
+                    <button id="unmuteButton">Start Game</button>
+                </form>
+            </dialog>
+        </div>     
+        <audio class="audio" muted autoplay loop src="./audio/cricket.wav"></audio>     
         <img src="">
-    </div>
-    
+        <div id="box"></div>
+    </div>    
     <script src="./index.js"></script>
 </body>
 </html>
