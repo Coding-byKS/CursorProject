@@ -73,10 +73,12 @@ in the vicinity of the cricket */
         setTimeout(() => {
           image.classList.remove("imagedetails");                          
           randomGen();
-          document.getElementById("h1").innerHTML="Great Job!! Those crickets could be irritating"
+          document.getElementById("h1").innerHTML="Great Job!! Those crickets can be irritating"
           document.getElementById("p").innerHTML="";
           button.innerHTML = "Play Again?????"
           document.querySelector("dialog").showModal();              
           }, 2500);    
       } }        
     )
+
+    
